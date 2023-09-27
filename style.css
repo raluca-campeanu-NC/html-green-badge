@@ -1,0 +1,123 @@
+body {
+    padding: 10px 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.nav-link {
+    margin-right: 10px;
+}
+
+section:not(#intro, #contact-me) {
+    margin-top: 30px;
+}
+
+section > p:first-of-type {
+    margin-top: 0;
+}
+
+.section-title {
+    display: flex;
+}
+
+.section-title > h2 {
+    margin-right: 5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+picture, video, .iframe-wrapper {
+    align-self: center;
+}
+
+.iframe-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+    @media (max-width: 768px) {
+        height: 350px;
+    }
+    @media (max-width: 480px) {
+        height: 300px;
+    }
+}
+
+iframe, video {
+    width: 60%;
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+}
+
+dl.game-authors {
+    margin-top: 0;
+}
+
+dl.game-authors > h3 {
+    margin-top: 0;
+}
+
+dl.game-authors > dd {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+th, td {
+    width: 50%;
+}
+
+td {
+    padding-left: 5px;
+}
+
+#contact-me {
+    margin-top: 100px;
+    border-top: 1px solid;
+}
+
+dl.personal-info > dt {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+dl.personal-info > dd {
+    font-size: 18px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin: 0 -30px;
+    padding: 10px 20px;
+}
+
+.articles-list > a {
+    color: white;
+}
+
